@@ -1,0 +1,154 @@
+body {
+  background: lightgrey;
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  color: lightgrey;
+  font-size: 1.3em; 
+}
+
+#container {
+  max-width: 80%;
+  margin: auto;
+  background: #fff;
+}
+  
+.form-header {
+    width: 100%;
+    margin: 0 0 40px 0;
+    background: #2f3944;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .05em;
+    padding: 40px 0 40px 0;
+  }
+
+.form-body {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.signup {
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.rule-double {
+  margin-top: 40px;
+  border: 3px double #2f3944;
+}
+
+.rule-single {
+  border-top: 3px solid #2f3944;
+}
+
+.contact-form {
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #2f3944;
+  font-size: 1.7em;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Form Fields -------------------- */
+
+input,
+textarea,
+select {
+  font-size: 1em;
+  line-height: 35px;
+  color: black;
+  font-weight: 300; 
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 10px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #eff0f1;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+input:hover, textarea:hover, select:hover { 
+  border: 2px solid navy;
+}
+
+input[type="zip"] {
+  max-width: 50%;
+}
+
+label {
+  color: lightgrey;
+}
+
+
+/* Placeholder Text -------------------- */
+
+input[placeholder="Required"] {
+  text-align: right;
+  font-style: italic;
+}
+
+
+/* Button -------------------- */
+
+button {
+  width: 100%;
+  background: #5ebcb4;
+  color: white;
+  font-size: 1.6em;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  background: #429f9a;
+}
+
+
+/* Footer -------------------- */
+
+.footer {
+  text-align: center;
+  font-style: italic; 
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
