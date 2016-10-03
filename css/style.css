@@ -1,22 +1,39 @@
-body {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrapper {
   background: lightgrey;
+}
+
+body {
   font-family: 'Merriweather', serif;
+  color: grey;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: #2f3944;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 p {
+  text-align: center;
+  padding: 0 20px 20px 20px;
+  font-size: 1.2em;
   color: lightgrey;
-  font-size: 1.3em; 
 }
 
-#container {
-  max-width: 80%;
-  margin: auto;
-  background: #fff;
-}
-  
+
+/* Header -------------------- */
+
 .form-header {
-    width: 100%;
-    margin: 0 0 40px 0;
+    width: 85%;
+    margin: 0 auto;
     background: #2f3944;
     text-align: center;
     text-transform: uppercase;
@@ -25,86 +42,120 @@ p {
     padding: 40px 0 40px 0;
   }
 
-.form-body {
-  max-width: 90%;
-  margin: 0 auto;
-}
 
-.signup {
-  text-align: center;
-  margin: 20px auto 0;
-}
+/* Horizontal Dividers -------------------- */
 
-.rule-double {
+.rule-double-top {
   margin-top: 40px;
-  border: 3px double #2f3944;
+  border-top: 7px solid #2f3944;
+  max-width: 95%;
+}
+
+.rule-double-bottom {
+  border-top: 2px solid #2f3944;
+  margin-bottom: 30px;
+  max-width: 95%;
 }
 
 .rule-single {
   border-top: 3px solid #2f3944;
+  margin-bottom: 30px;
+  max-width: 95%;
 }
 
-.contact-form {
-  width: 90%;
-  margin: auto;
+
+/* Form Styling -------------------- */
+
+form {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background: white;
 }
 
-h2 {
-  margin-bottom: 20px;
-  color: #2f3944;
-  font-size: 1.7em;
-}
-
-fieldset {
-  border: none;
-}
-
-/* Form Fields -------------------- */
-
-input,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
 textarea,
 select {
-  font-size: 1em;
-  line-height: 35px;
-  color: black;
-  font-weight: 300; 
-  width: 100%;
   border: none;
+  border-radius: 3px;
+  font-size: 16px;
   height: auto;
-  padding: 10px;
-  outline: 0;
-  margin-bottom: 1.2em;
-  border-radius: .3em;
-  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  margin: 0;
+  padding: 15px;
+  width: 100%;
   background-color: #eff0f1;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  color: #8a97a0;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.05) inset;
+  margin-bottom: 30px;
 }
 
-input:hover, textarea:hover, select:hover { 
-  border: 2px solid navy;
+input[type="number"] {
+  width: 50%;
 }
 
-input[type="zip"] {
-  max-width: 50%;
+textarea {
+  margin-bottom: 0;
 }
 
-label {
-  color: lightgrey;
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
 }
 
-
-/* Placeholder Text -------------------- */
+select {
+  padding: 6px;
+  height: 50px;
+  border-radius: 2px;
+}
 
 input[placeholder="Required"] {
   text-align: right;
   font-style: italic;
 }
 
+input:hover, textarea:hover, select:hover { 
+  border: 2px solid navy;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #2f3944;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+label.format {
+  display: inline;
+}
+
+.height {
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+
 
 /* Button -------------------- */
 
 button {
-  width: 100%;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
   background: #5ebcb4;
   color: white;
   font-size: 1.6em;
@@ -128,27 +179,22 @@ button:hover {
 }
 
 
+/* Media Query -------------------- */
 
+@media (min-width: 760px) {
+    
+.contact label {
+  	float: left;
+  	margin-top: 15px;
+  	width: 22%;
+	}
 
+.contact input,
+select {
+  	width: 78%;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input[type="number"] {
+  width: 50%;
+  }
+}
